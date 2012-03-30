@@ -84,22 +84,26 @@
 \bigskip
 
 \begin{minipage}[t]{0.5\textwidth}
-  VAW A-15 \\
-  ETH Zentrum \\
-  8092 Z\"urich \\
-  Switzerland
+  \begin{tabular}{l}
+  Mathematics and Computer Science Division \\
+  Argonne National Laboratory \\
+  9700 S Cass Ave \\
+  Argonne, IL 60439, USA
+\end{tabular}
 \end{minipage}
 \begin{minipage}[t]{0.5\textwidth}
-  Office: +41 44 632 4147 \\
-  Mobile: +41 77 424 0741 \\
-  Fax: +41 44 632 1192 \\
-  Email: \url{jed@59A2.org}
+  \begin{tabular}{ll}
+    % Office: +41 44 632 4147 \\
+    Mobile: & +1 773 234 5332 \\
+    Fax: & +1 630 252 5986 \\
+    Email: & \url{jedbrown@mcs.anl.gov}
+  \end{tabular}
 \end{minipage}
 
 \section*{Education}
 
 \begin{itemize}
-\item Ph.D. Glaciology, ETH Z\"urich, {\it expected April 2011}.
+\item Ph.D. Glaciology, ETH Z\"urich, 2011.
 \item M.S. Mathematics, University of Alaska Fairbanks, 2006.
 \item B.S. Mathematics, {\it magna cum laude}, University of Alaska Fairbanks, 2004.
 \item B.S. Physics, {\it magna cum laude}, University of Alaska Fairbanks, 2004.
@@ -107,10 +111,11 @@
 
 \section*{Employment}
 \begin{itemize}
-\item Research Assistant, ETH Z\"urich, 2007--present.
+\item Postdoctoral Fellow, Mathematics and Computer Science Division, Argonne National Laboratory, 2011--present
+\item Research Assistant, ETH Z\"urich, 2007--2011
 \item Research Technician, University of Alaska Fairbanks, 2006--2007
 \item Research Assistant, University of Alaska Fairbanks, 2003--2006
-\item Teaching Assistant, University of Northern British Columbia, 2003
+%\item Teaching Assistant, University of Northern British Columbia, 2003
 %\item Student Assistant, Geophysical Institute, 2002
 \end{itemize}
 
@@ -119,9 +124,10 @@
   discretization in complex geometry, compatible discretizations for
   heterogeneous flows, PDE-constrained optimization.
 \end{itemize}
-\subsection*{Publications}
+\subsection*{Selected publications}
 \begin{itemize}
-\item J. Brown, B. Smith, and A. Ahmadia, \ptitle{Achieving textbook multigrid efficiency for hydrostatic ice sheet flow}, submitted to JGR-Earth Surface, 2011.
+\item R.J. Biezuner, J. Brown, G. Ercole, and E. M. Martins, \ptitle{Computing the first eigenpair of the $p$-Laplacian via inverse iteration of sublinear supersolutions}, accepted by J. Scientific Computing, 2011.
+\item J. Brown, B. Smith, and A. Ahmadia, \ptitle{Achieving textbook multigrid efficiency for hydrostatic ice sheet flow}, submitted to SIAM J. Sci. Comput., 2011.
 \item J. Brown, \ptitle{Efficient nonlinear solvers for nodal high-order finite elements in 3D}, Journal of Scientific Computing, 45(1) 48--63, 2010.
 \item J. M. Amundson, M. Fahnestock, M. Truffer, J. Brown, M. P. L\"uthi, and R. J. Motyka, \ptitle{Ice m\'elange dynamics and implications for terminus stability, Jakobshavn Isbr\ae, Greenland}, Journal of Geophysical Research, Earth Surface, 115, F01005, 2010.
 \item K. Burckhardt, D. Szczerba, J. Brown and K. Muralidhar, and G. Szkely. \ptitle{Fast implicit simulation of oscillatory flow in human abdominal bifurcation using a Schur complement preconditioner}, Euro-Par Parallel Processing, 747-759, 2009.
@@ -131,31 +137,34 @@
 \item E. Bueler, C. S. Lingle, J. A. Kallen-Brown, D. N. Covey, and L. N. Bowman, \ptitle{Exact solutions and the verification of numerical models for isothermal ice sheets}, Journal of Glaciology, 51(173), 2005.
 \end{itemize}
 
-\subsection*{Recent conference presentations}
+\subsection*{Selected conference presentations}
 \begin{itemize}
+\item Jed Brown, Dave May, and Barry Smith, \ptitle{Strongly coupled solvers with loosely coupled software}, 7th International Congress on Industrial and Applied Mathematics - ICIAM 2011, Vancouver, Canada, 2011-07-21.
+\item Jed Brown, Iulian Grindeanu, Dmitry Karpeev, Barry F. Smith, and Timothy J. Tautges, \ptitle{Scalable implicit methods for free surface flows in glaciology}, 7th International Congress on Industrial and Applied Mathematics - ICIAM, Vancouver, Canada, 2011-07-20.
 \item J. Brown, \ptitle{Implicit solution of free surface flows in glaciology}, SIAM Conference on Computational Science and Engineering, Reno, NV, \printdate{2011-03-01}.
 \item J. Brown, \ptitle{Computational methods for several models of ice stream flow}, International Conferenece on the Diversity of Research on Geophysical Environmental Sciences, ETH Z\"urich, \printdate{2011-02-18}.
 \item J. Brown, \ptitle{Solving free surface flows for steady state without time stepping}, American Geophysical University Fall Meeting, \printdate{2010-12-14}.
 \item J. Brown, \ptitle{Implicit discretizations for grounding line dynamics}, CCSM Annual Meeting, Breckenridge, CO,  \printdate{2010-06-30}.
 \item J. Brown, \ptitle{PETSc: new developments, memory performance, and algorithmic experimentation}, NOTUR, Bergen, Norway, \printdate{2010-05-21}.
 \item J. Brown, \ptitle{Implicit integration of 3D ice sheet flow using hybrid factorization/relaxation block preconditioning}, invited, Copper Mountain Conference on Iterative Methods, CO, \printdate{2010-04-08}.
-\item J. Brown and B. Smith, \ptitle{Textbook multigrid efficiency for hydrostatic ice flow}, CCSM Land Ice Working Group, Boulder, CO, \printdate{2010-02-17}.
-\item J. Brown, \ptitle{Accurate Time Integration of 3D Grounding Line Dynamics}, American Geophysical Union Fall Meeting, \printdate{2009-12-15}.
-\item J. Brown, \ptitle{Scalable solvers for the 3D non-Newtonian Stokes problem in ice flow modeling}, CCSM Annual Meeting, Breckenridge, CO, \printdate{2010-06-17}.
-\item J. Brown, \ptitle{Scalable solvers for optimal control of a power-law fluid}, American Geophysical Union, Fall Meeting \printdate{2008-12-15}.
+%\item J. Brown and B. Smith, \ptitle{Textbook multigrid efficiency for hydrostatic ice flow}, CCSM Land Ice Working Group, Boulder, CO, \printdate{2010-02-17}.
+%\item J. Brown, \ptitle{Accurate Time Integration of 3D Grounding Line Dynamics}, American Geophysical Union Fall Meeting, \printdate{2009-12-15}.
+%\item J. Brown, \ptitle{Scalable solvers for the 3D non-Newtonian Stokes problem in ice flow modeling}, CCSM Annual Meeting, Breckenridge, CO, \printdate{2010-06-17}.
+%\item J. Brown, \ptitle{Scalable solvers for optimal control of a power-law fluid}, American Geophysical Union, Fall Meeting \printdate{2008-12-15}.
 \end{itemize}
 
 \subsection*{Software}
 \begin{itemize}
-\item Principle author of the Parallel Ice Sheet Model (PISM) 2004--2007, \href{http://pism-docs.org}{\url{pism-docs.org}}
-\item PETSc developer since 2008, \href{http://mcs.anl.gov/petsc}{\url{mcs.anl.gov/petsc}}
+\item Principal author of the Parallel Ice Sheet Model (PISM) 2004--2007, \url{http://pism-docs.org}.
+\item Developer of the PETSc solvers package since 2008, \url{http://mcs.anl.gov/petsc}.
+\item Author of the Dohp finite element library, \url{https://github.com/jedbrown/dohp}.
 \end{itemize}
 
-\subsection*{Funding}
-\begin{itemize}
-\item The causes and future direction of the rapid thinning and acceleration of Jakobshavn Isbr{\ae}, West Greenland Swiss National Science Foundation, 2007-2010
-\item Scalable Ice-sheet Solvers and Infrastructure for Petascale, High-resolution, Unstructured Simulations, DOE ASCR LAB 09-21, 2009-2012
-\end{itemize}
+% \subsection*{Funding}
+% \begin{itemize}
+% \item The causes and future direction of the rapid thinning and acceleration of Jakobshavn Isbr{\ae}, West Greenland Swiss National Science Foundation, 2007-2010
+% \item Scalable Ice-sheet Solvers and Infrastructure for Petascale, High-resolution, Unstructured Simulations, DOE ASCR LAB 09-21, 2009-2012
+% \end{itemize}
 
 % \subsection*{Collaborators}
 % \begin{itemize}
@@ -169,17 +178,18 @@
 \section*{Other}
 \subsection*{Tutorials}
 \begin{itemize}
+\item J. Brown, \ptitle{PETSc} tutorial at the 2011 ACTS workshop, NERSC, Berkeley, CA, \printdate{2011-08-17}.
 \item J. Brown, \ptitle{PETSc}, 3-day tutorial at the Arctic Region Supercomputing Center, Fairbanks, AK, \daterange{2010-08-03}{2010-08-05}.
 \item J. Brown, \ptitle{PETSc}, 2-day tutorial at the Swiss National Supercomputing Center, Manno, Switzerland, \daterange{2010-05-10}{2010-05-11}.
 \item J. Brown, \ptitle{Scalable solvers for nonlinear equations: mini-course on Newton-Krylov methods}, 3-week mini-course at the University of Alaska Fairbanks, \daterange{2009-01-22}{2009-02-05}, \href{http://59A2.org/newton-krylov/}{\url{59A2.org/newton-krylov}}.
 \end{itemize}
 
-\subsection*{Honors \& Awards}
-\begin{itemize}
-\item 2004 Outstanding Mathematics Student of the Year, UAF
-\item 2004 Outstanding Physics Student of the Year, UAF
-\item 2000--2004 Alaska Scholar
-\end{itemize}
+% \subsection*{Honors \& Awards}
+% \begin{itemize}
+% \item 2004 Outstanding Mathematics Student of the Year, UAF
+% \item 2004 Outstanding Physics Student of the Year, UAF
+% \item 2000--2004 Alaska Scholar
+% \end{itemize}
 
 % Footer
 \begin{center}
