@@ -19,8 +19,7 @@
 %\usepackage[urw-garamond]{mathdesign}
 
 \usepackage[resetlabels]{multibib}
-\newcites{journal,report}{Journal Articles,Conference Papers and Technical Reports}
-
+\newcites{journal,submitted,conference,report}{Journal Papers Published,Journal Papers Submitted,Refereed Proceedings Papers,Technical Reports}
 % Set your name here
 \def\name{Jed Brown}
 
@@ -133,7 +132,6 @@
 \nocitejournal{
   malas2012streaming,
   biezuner2012computing,
-  brown2011tmeice,
   brown2010dohp,
   amundson2010ice,
   bueler2009shallow,
@@ -143,22 +141,32 @@
 \bibliographystylejournal{unsrt}
 \bibliographyjournal{jedbib,petsc,petscapp}
 
+\nocitesubmitted{
+  brown2011tmeice}
+\bibliographystylesubmitted{unsrt}
+\bibliographysubmitted{jedbib,petsc,petscapp}
+
+\nociteconference{
+  bkmms2012,
+  burckhardt2009fis}
+\bibliographystyleconference{unsrt}
+\bibliographyconference{jedbib,petsc,petscapp}
+
 \nocitereport{
   brown2012nonblocking,
   adams2012exascalelibraries,
   anitescu2012exascale,
   smcabbkz2012,
-  bkmms2012,
   scott2012fosteringgeo,
   petsc-user-ref,
-  KeyesMcInnesWoodwardEtAl11,
-  burckhardt2009fis}
+  KeyesMcInnesWoodwardEtAl11}
 \bibliographystylereport{unsrt}
 \bibliographyreport{jedbib,petsc,petscapp}
 
 \newcommand{\JedBrown}{J. Brown}
 \section*{Selected Presentations}
 \begin{itemize}
+\item {\JedBrown}, \ptitle{User-defined nonblocking collectives must make progress}, DOE Exascale Research Conference, Portland, \printdate{2012-04-16}.
 \item {\JedBrown}, M. Knepley, D. May, and B.F. Smith, \ptitle{Scalable and composable implicit solvers for polythermal ice flow with steep topography}, International Conference on Scientific Computing and Applications, Las Vegas, \printdate{2012-04-03}.
 \item {\JedBrown}, M. Adams, P. Brune, M. Knepley, D. May, L. C. McInnes, and B.F. Smith, \ptitle{Commuting block preconditioning with multigrid}, Copper Mountain Conference on Iterative Methods, \printdate{2012-03-27}.
 \item {\JedBrown}, M. Knepley, D. May, and B.F. Smith, \ptitle{Towards high throughput composable multilevel solvers for implicit multiphysics simulation}, Center for Computational Engineering Distinguished Speaker Series, MIT, \printdate{2012-03-21}.
@@ -241,12 +249,12 @@
 \item American Geophysical Union
 \end{itemize}
 
-% \subsection*{Honors \& Awards}
-% \begin{itemize}
-% \item 2004 Outstanding Mathematics Student of the Year, UAF
-% \item 2004 Outstanding Physics Student of the Year, UAF
-% \item 2000--2004 Alaska Scholar
-% \end{itemize}
+\section*{Honors \& Awards}
+\begin{itemize}
+\item 2004 Outstanding Mathematics Student of the Year, University of Alaska Fairbanks
+\item 2004 Outstanding Physics Student of the Year, University of Alaska Fairbanks
+\item 2000--2004 Alaska Scholar
+\end{itemize}
 
 % Footer
 \begin{center}
