@@ -42,6 +42,15 @@
 \newcommand\doi[1][]{\SaveVerb[%
     aftersave={\textnormal{doi:\UseVerb[#1]{vsave}}}]{vsave}}
 
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\renewcommand\headrulewidth{0em}
+\newcommand\flextab{\hspace{\stretch{1}}}
+\fancyhf{} % clear all header and footer fields
+%\fancyfoot[L]{\slshape Curriculum Vitae \flextab  Page {\thepage} of \pageref*{LastPage}  \flextab \name}
+\cfoot{Curriculum Vitae \flextab  Page {\thepage} of \pageref*{LastPage}  \flextab \name}
+
 % Don't indent paragraphs.
 \setlength\parindent{0em}
 
@@ -60,7 +69,7 @@
 \begin{document}
 
 % Place name at left
-{\LARGE \name}
+{\Large \name}
 
 % Alternatively, print name centered and bold:
 %\centerline{\huge \bf \name}
