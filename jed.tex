@@ -9,9 +9,13 @@
 %\usepackage[urw-garamond]{mathdesign}
 
 \usepackage[resetlabels]{multibib}
-\newcites{journal,submitted,conference,report}{
+% \newcites{journaljed,submittedjed,conferencejed,reportjed}{
+%   Journal Papers Published,
+%   Journal Papers Submitted,
+%   Refereed Proceedings Papers,
+%   Technical Reports}
+\newcites{journaljed,conferencejed,reportjed}{
   Journal Papers Published,
-  Journal Papers Submitted,
   Refereed Proceedings Papers,
   Technical Reports}
 % Set your name here
@@ -105,7 +109,8 @@
   heterogeneous flows, PDE-constrained optimization.
 \end{itemize}
 
-\nocitejournal{
+\nocitejournaljed{
+  brown2012tmeice,
   malas2012streaming,
   biezuner2012computing,
   brown2010dohp,
@@ -114,34 +119,37 @@
   bueler2007est,
   bueler2007fcv,
   bueler2005iso}
-\bibliographystylejournal{unsrt}
-\bibliographyjournal{jedbib,petsc,petscapp}
+\bibliographystylejournaljed{unsrt}
+\bibliographyjournaljed{jedbib,petsc,petscapp}
 
-\nocitesubmitted{
-  brown2011tmeice}
-\bibliographystylesubmitted{unsrt}
-\bibliographysubmitted{jedbib,petsc,petscapp}
+% \nocitesubmittedjed{}
+% \bibliographystylesubmittedjed{unsrt}
+% \bibliographysubmittedjed{jedbib,petsc,petscapp}
 
-\nociteconference{
-  bkmms2012,
+\nociteconferencejed{
+  bkmms2012b,
   burckhardt2009fis}
-\bibliographystyleconference{unsrt}
-\bibliographyconference{jedbib,petsc,petscapp}
+\bibliographystyleconferencejed{unsrt}
+\bibliographyconferencejed{jedbib,petsc,petscapp}
 
-\nocitereport{
+\nocitereportjed{
   brown2012nonblocking,
+  brown2012nonblockingieee,
   adams2012exascalelibraries,
   anitescu2012exascale,
   smcabbkz2012,
   scott2012fosteringgeo,
   petsc-user-ref,
   KeyesMcInnesWoodwardEtAl11}
-\bibliographystylereport{unsrt}
-\bibliographyreport{jedbib,petsc,petscapp}
+\bibliographystylereportjed{unsrt}
+\bibliographyreportjed{jedbib,petsc,petscapp}
 
 \newcommand{\JedBrown}{J. Brown}
 \section*{Selected Presentations}
 \begin{itemize}
+\item {\JedBrown}, \ptitle{Multilevel Stokes flow solvers: Adapting to heterogeneity and rheology}, Mantle Convection and Lithospheric Dynamics Workshop, UC Davis, July 30, 2012.
+\item {\JedBrown}, M. Adams, P. Brune, M. Knepley, L.C. McInnes, and B. Smith, \ptitle{Composable multilevel methods for multiphysics simulation}, SIAM Annual Meeting, Minneapolis, \printdate{2012-07-13}.
+\item {\JedBrown}, I. Grindeanu, B. Smith, and T. Tautges, \ptitle{A parallel unstructured implicit 3D polythermal model for outlet glaciers}, International Glaciology Society International Symposium</a>, Fairbanks, AK, \printdate{2012-06-28}.
 \item {\JedBrown}, P. Brune, E. Constantinescu, M. Knepley, and B. Smith, \ptitle{Towards high throughput composable multilevel solvers for implicit multiphysics simulation}, National Renewable Energy Laboratory, Golden, CO, \printdate{2012-04-27}.
 \item {\JedBrown}, \ptitle{User-defined nonblocking collectives must make progress}, DOE Exascale Research Conference, Portland, \printdate{2012-04-16}.
 \item {\JedBrown}, M. Knepley, D. May, and B.F. Smith, \ptitle{Scalable and composable implicit solvers for polythermal ice flow with steep topography}, International Conference on Scientific Computing and Applications, Las Vegas, \printdate{2012-04-03}.
