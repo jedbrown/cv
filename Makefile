@@ -1,9 +1,18 @@
+PDFLATEX = pdflatex -shell-escape
+
 jed.pdf : jed.tex
 	@make checkbib
-	pdflatex -shell-escape $<
-	for file in *.aux; do bibtex `basename $$file .aux`; done
-	pdflatex -shell-escape $<
-	pdflatex -shell-escape $<
+	$(PDFLATEX) $<
+	for file in *jed.aux; do bibtex `basename $$file .aux`; done
+	$(PDFLATEX) $<
+	$(PDFLATEX) $<
+
+jedshort.pdf : jedshort.tex
+	@make checkbib
+	$(PDFLATEX) $<
+	for file in *jedshort.aux; do bibtex `basename $$file .aux`; done
+	$(PDFLATEX) $<
+	$(PDFLATEX) $<
 
 jedbib.bib :
 	ln -s ~/jedbib/jedbib.bib

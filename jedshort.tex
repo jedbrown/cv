@@ -1,0 +1,219 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage[english]{isodate}\isodate
+\usepackage{fullpage,url}
+% Fonts
+\usepackage[T1]{fontenc}
+%\usepackage[urw-garamond]{mathdesign}
+
+\usepackage[resetlabels]{multibib}
+\newcites{journaljedshort}{
+  Selected Journal Papers}
+\def\name{Jed Brown}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {glaciology, computational science, partial differential equations, finite element methods, incompressible flow, non-Newtonian flow, boundary conditions},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\large}
+\subsectionfont{\rmfamily\mdseries\itshape\normalsize}
+
+\newcommand\ptitle[1]{\textit{#1}} % Formatting for paper titles
+\usepackage{fancyvrb}
+\newcommand\doi[1][]{\SaveVerb[%
+    aftersave={\textnormal{doi:\UseVerb[#1]{vsave}}}]{vsave}}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\renewcommand\headrulewidth{0em}
+\newcommand\flextab{\hspace{\stretch{1}}}
+\fancyhf{} % clear all header and footer fields
+%\fancyfoot[L]{\slshape Curriculum Vitae \flextab  Page {\thepage} of \pageref*{LastPage}  \flextab \name}
+\cfoot{Curriculum Vitae \flextab  Page {\thepage} of \pageref*{LastPage}  \flextab \name}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+\usepackage{titlesec}
+\titlespacing\section{5pt}{*0}{*0}
+
+% Make lists without bullets and compact spacing
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+    \setlength{\itemsep}{0.25em}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0.25em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\Large \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\bigskip
+
+\begin{minipage}[t]{0.5\textwidth}
+  \begin{tabular}{l}
+  Mathematics and Computer Science Division \\
+  Argonne National Laboratory \\
+  9700 S Cass Ave, Bldg. 240 \\
+  Argonne, IL 60439, USA
+\end{tabular}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+  \begin{tabular}{ll}
+    % Office: +41 44 632 4147 \\
+    Mobile: & +1 773 234 5332 \\
+    Fax: & +1 630 252 5986 \\
+    Email: & \url{jedbrown@mcs.anl.gov}
+  \end{tabular}
+\end{minipage}
+\smallskip
+\section*{Education}
+
+\begin{itemize}
+\item Ph.D. Glaciology, ETH Z\"urich, 2011. Thesis: Computational Methods for Ice Flow Simulation.
+\item M.S. Mathematics, University of Alaska Fairbanks, 2006.
+\item B.S. Mathematics, {\it magna cum laude}, University of Alaska Fairbanks, 2004.
+\item B.S. Physics, {\it magna cum laude}, University of Alaska Fairbanks, 2004.
+\end{itemize}
+
+\section*{Employment}
+\begin{itemize}
+\item Postdoctoral Appointee, Mathematics and Computer Science Division, Argonne National Laboratory, 2011--present
+\item Research Assistant, ETH Z\"urich, 2007--2011
+\item Research Technician, University of Alaska Fairbanks, 2006--2007
+\item Research Assistant, University of Alaska Fairbanks, 2003--2006
+%\item Teaching Assistant, University of Northern British Columbia, 2003
+%\item Student Assistant, Geophysical Institute, 2002
+\end{itemize}
+
+\section*{Research}
+\begin{itemize}\item Scalable solvers for implicit multiphysics, high order PDE
+  discretization in complex geometry, compatible discretizations for
+  heterogeneous flows, PDE-constrained optimization.
+\end{itemize}
+
+\nocitejournaljedshort{
+  brown2012tmeice,
+  malas2012streaming,
+  biezuner2012computing,
+  brown2010dohp,
+  amundson2010ice,
+  bueler2009shallow,
+  bueler2007est,
+  bueler2007fcv,
+  bueler2005iso}
+\bibliographystylejournaljedshort{unsrt}
+\bibliographyjournaljedshort{jedbib,petsc,petscapp}
+
+% \nocitesubmittedjedshort{}
+% \bibliographystylesubmittedjedshort{unsrt}
+% \bibliographysubmittedjedshort{jedbib,petsc,petscapp}
+
+% \nociteconferencejedshort{
+%   bkmms2012b,
+%   burckhardt2009fis}
+% \bibliographystyleconferencejedshort{unsrt}
+% \bibliographyconferencejedshort{jedbib,petsc,petscapp}
+
+% \nocitereportjedshort{
+%   brown2012nonblocking,
+%   brown2012nonblockingieee,
+%   adams2012exascalelibraries,
+%   anitescu2012exascale,
+%   smcabbkz2012,
+%   scott2012fosteringgeo,
+%   petsc-user-ref,
+%   KeyesMcInnesWoodwardEtAl11}
+% \bibliographystylereportjedshort{unsrt}
+% \bibliographyreportjedshort{jedbib,petsc,petscapp}
+
+\section*{Software}
+\begin{itemize}
+\item Developer of the Portable Extensible Toolkit for Scientific computing (PETSc) since 2008, \url{http://mcs.anl.gov/petsc}.
+\item Principal author of the Parallel Ice Sheet Model (PISM) 2004--2007, \url{http://pism-docs.org}.
+\end{itemize}
+
+\section*{Activities}
+\begin{itemize}
+\item Member of the Science Steering Committee for CIG (Computational Infrastructure for Geodynamics), Sep 2011 to Sep 2014.
+\item Session convener at the American Geophysical Union Fall Meeting, 2009, 2010, 2011, 2012.
+\item Program committee, Workshop on High Performance Computing and Hybrid Programming Concepts for Hyperbolic PDE Codes, KAUST, Feb 2012.
+\item Contributed to the MPI-3 standard.
+% \item Reviewer for
+%   Advances in Water Resources,
+%   Geoscientific Model Development,
+%   International Journal of High Performance Computing Applications,
+%   Journal of Computational Physics,
+%   Journal of Fluid Mechanics,
+%   Journal of Geophysical Research,
+%   Journal of Scientific Computing,
+%   The Cryosphere,
+%   Wiley
+\end{itemize}
+
+% \subsection*{Funding}
+% \begin{itemize}
+% \item The causes and future direction of the rapid thinning and acceleration of Jakobshavn Isbr{\ae}, West Greenland Swiss National Science Foundation, 2007-2010
+% \item Scalable Ice-sheet Solvers and Infrastructure for Petascale, High-resolution, Unstructured Simulations, DOE ASCR LAB 09-21, 2009-2012
+% \end{itemize}
+
+% \subsection*{Collaborators}
+% \begin{itemize}
+% \item Ed Bueler, Martin Truffer, (University of Alaska);
+%   Jason Amundson (University of Chicago); Mark Fahnestock (University of New
+%   Hampshire); Martin Funk, Wolfgang Kinzelbach, Martin L\"uthi, Dave May
+%   (ETH, Swiss Federal Institute of Technology Z\"urich); Dmitry Karpeev,
+%   Barry Smith, Tim Tautges, Jean Utke (Argonne National Laboratory);
+%   Patrick Heimbach (Massachusetts Institute of Technology)
+% \end{itemize}
+\section*{Presentations and Teaching}
+\begin{itemize}
+\item 10 to 25 presentations per year including invited presentations at SIAM Computational Science and Engineering (CSE), SIAM Parallel Processing (PP), SIAM Annual, Institute for Computational and Experimental Research in Mathematics (ICERM, Brown University), CScADS (panel discussion), American Geophysical Union (AGU), Norwegian High Performance Computing (NOTUR, plenary), High Performance Computing and Hybrid Programming Concepts for Hyperbolic PDE Codes ($[\text{HPC}]^3$, KAUST),  International Council for Industrial and Applied Mathematics (ICIAM), Community Earth System Model (CESM/CCSM), Computational Infrastructure for Geodynamics (CIG), International Glaciology Society (IGS), MIT Center for Computational Engineering Distinguished Speaker series, Institute for Computational Engineering and Sciences seminar series (ICES, UT Austin).
+\item PETSc and advanced PETSc tutorials ranging from two hours to three days at National Renewable Energy Laboratory (2012), Texas Advanced Computing Center (2012), ACTS workshop at NERSC (2011), Arctic Region Supercomputing Center (2010), and Swiss National Supercomputing Center (2010).
+\item Argonne summer students advised: Lulu Liu (KAUST, nonlinear solution methods for oil extraction problems), Abraham Taicher (UT Austin, compatible discretizations for Darcy-Stokes melt-migration), Xuan Zhou (IIT, scalable dense linear support in PETSc using Elemental).
+\item Three-week mini-course \emph{Scalable solvers for nonlinear equations: mini-course on Newton-Krylov methods}, at the University of Alaska Fairbanks, \daterange{2009-01-22}{2009-02-05}.
+\end{itemize}
+
+\section*{Memberships}
+\begin{itemize}
+\item Society of Industrial and Applied Mathematics
+\item American Geophysical Union
+\end{itemize}
+
+\section*{Honors \& Awards}
+\begin{itemize}
+\item 2009 Piolet d'Or international mountaineering award for first ascent of Xuelian West (6422\,m, China) via `The Great White Jade Heist'.
+\item 2005 NCAA All American in cross-country skiing
+\item 2004 Outstanding Mathematics Student of the Year, University of Alaska Fairbanks
+\item 2004 Outstanding Physics Student of the Year, University of Alaska Fairbanks
+% \item 2000--2004 Alaska Scholar
+\end{itemize}
+
+% Footer
+\begin{center}
+  \begin{small}
+    Last updated: \today
+  \end{small}
+\end{center}
+\end{document}
